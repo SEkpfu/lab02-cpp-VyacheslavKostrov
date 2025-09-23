@@ -1,0 +1,31 @@
+﻿#define _USE_MATH_DEFINES
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	setlocale(0, "");
+	double y, x;
+	cout << "Введите y: "; cin >> y;
+	
+
+
+	if (y <= -1) {
+		x = sin(M_PI * y);
+	}
+	
+	else if ( y > -1 && y <= 0) {
+		x = pow(y*y - 1, 2);
+
+	}
+
+	else {
+		x = sqrt(fabs(y * y - 5));
+	}
+
+	cout << "x = " << x << endl;
+
+	return 0;
+
+}
